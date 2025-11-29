@@ -22,24 +22,24 @@ export default function AnalyticsPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const exampleJson = [
-    {
-      user_id: "user_1",
-      event_name: "page_view",
-      timestamp: "2025-01-01T10:00:00Z",
-      views: 5,
-      clicks: 2,
-      time_spent_seconds: 120,
-    },
-    {
-      user_id: "user_2",
-      event_name: "signup",
-      timestamp: "2025-01-01T10:05:00Z",
-      views: 1,
-      clicks: 1,
-      time_spent_seconds: 30,
-    },
-  ];
+  // const exampleJson = [
+  //   {
+  //     user_id: "user_1",
+  //     event_name: "page_view",
+  //     timestamp: "2025-01-01T10:00:00Z",
+  //     views: 5,
+  //     clicks: 2,
+  //     time_spent_seconds: 120,
+  //   },
+  //   {
+  //     user_id: "user_2",
+  //     event_name: "signup",
+  //     timestamp: "2025-01-01T10:05:00Z",
+  //     views: 1,
+  //     clicks: 1,
+  //     time_spent_seconds: 30,
+  //   },
+  // ];
 
   const handleCompute = async () => {
     setError(null);
@@ -99,12 +99,12 @@ export default function AnalyticsPage() {
       />
 
       <div className="flex gap-3 mt-3">
-        <button
+        {/* <button
           className="bg-emerald-500 text-black px-4 py-2 rounded font-semibold"
           onClick={() => setRawJson(JSON.stringify(exampleJson, null, 2))}
         >
           Example
-        </button>
+        </button> */}
 
         <button
           className="bg-blue-500 px-4 py-2 rounded font-semibold"
